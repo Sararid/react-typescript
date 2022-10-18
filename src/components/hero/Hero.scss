@@ -1,0 +1,50 @@
+
+@import "../../styles/Mixins.scss";
+
+.heroContainer  {
+background-color: pink;
+height: 50vh;
+background-image: url("../../assets/hero.jpg") ;
+background-repeat: no-repeat;
+background-size: cover; /* Resize the background image to cover the entire container */
+background-position: center; /* Center the image */
+position: relative;
+&__box{
+    background-color: white;
+    opacity: 0.8;
+    width: 200px;
+    height: 150px;
+    padding: 1.2rem;
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    border-radius: 10px;
+    @media all and (min-width: 768px){
+        width: 300px;
+    height: 190px;
+    }
+    h1 {
+        font-size: 0.9em;
+        @media all and (min-width: 768px){
+          font-size: 1.1em;
+        }
+    }
+    p{
+        @media all and (min-width: 768px){
+            font-size: 1em;
+          }
+    font-size: 0.7em;
+    }
+    &--container {
+        @include flexRowCenter;
+      font-size: 0.9em;
+    }
+    &--img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-right: 1rem;
+}
+}
+
+}

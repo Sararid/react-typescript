@@ -1,0 +1,27 @@
+@import '../../styles/Mixins.scss';
+
+.form {
+    @include flexColumnCenter;
+    &__container{
+        @include flexColumnCenter;
+    }
+    &__button {
+         @include buttonStyle;
+         width: 200px;
+    }
+    &__button:hover{
+        @include buttonHover;
+    }
+}
+
+input, textarea {
+    width: 15rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    padding: 0.5rem;
+    // box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+    // filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+    border-color: transparent;
+     background: #dde1e7;
+    box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+}

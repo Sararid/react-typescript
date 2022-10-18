@@ -1,0 +1,14 @@
+@import "../../styles/Mixins.scss";
+
+.nav{
+    @include flexRowCenter;
+
+   &__container{
+    @include flexRowCenter;
+    justify-content: space-around;
+    width: 100%;
+
+
+   }
+
+}
