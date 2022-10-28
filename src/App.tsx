@@ -5,7 +5,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 //components
 import Favorites from "./pages/Favorites";
-import Home from "./pages/Home";
+import Home from "./pages/layout/Home/Home";
 import NoPage from "./pages/NoPage";
 import Layout from "./pages/layout/Layout";
 

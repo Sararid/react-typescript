@@ -1,5 +1,31 @@
-@import '../../styles/Mixins.scss';
+@import "../../styles/Mixins.scss";
 
 .listRecipes {
-    @include flexColumnCenter
+  @include flexColumnCenter;
+  padding: 0;
+
+  &__container {
+    width: 20rem;
+    height: 29rem;
+    @include flexColumnCenter;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 0.4rem;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.15);
+    @media all and (min-width: 768px) {
+        width: 30rem
+    }
+    &--img {
+      width: 200px;
+      height: 200px;
+    }
+    &--button {
+margin: 1rem;
+    }
+  }
+  &__container:hover {
+    padding-left: 0.8rem;
+    border-left: 0.5rem solid #00ff99;
+  }
 }

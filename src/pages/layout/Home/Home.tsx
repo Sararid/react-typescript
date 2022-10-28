@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
-import Form from "../components/form/Form";
-import Hero from "../components/hero/Hero";
-import List from "../components/recipes/List";
-import { getAllRecipes } from "../services/getAllRecipes";
-import { Recipe } from "../types";
+import Form from "../../../components/form/Form";
+import Hero from "../../../components/hero/Hero";
+import List from "../../../components/recipes/List";
+import { getAllRecipes } from "../../../services/getAllRecipes";
+import { Recipe } from "../../../types";
+//style
+import "./Home.scss";
+
 //aqui por ejemplo ponemos todos los estados del componente
 interface AppStates {
   recipes: Array<Recipe>;
@@ -26,9 +29,11 @@ const Home = () => {
     <div>
       <Hero />
       <Form onNewRecipe={handleNewRecipe} />
-      <h1>My recipes</h1>
-      <List recipes={recipes} />
       <div>New count recipe : {newRecipes}</div>
+      <div className="main">
+        <h1>My recipes</h1>
+        <List recipes={recipes} />
+      </div>
     </div>
   );
 };

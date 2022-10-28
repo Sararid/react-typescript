@@ -2,7 +2,10 @@
 
 .nav{
     @include flexRowCenter;
-
+position: absolute;
+width: 100%;
+z-index: 9;
+background-color: aliceblue;
    &__container{
     @include flexRowCenter;
     justify-content: space-around;
